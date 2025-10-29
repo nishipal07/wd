@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+
+<body>
+
+    <form style="border:2px solid black; padding:35px; width:600px;margin:auto;margin-top:70px;">
+
+        <h1 style="text-align:centre;">Hotel Room Booking Form</h1>
+        <form action="/Book Now" method="post">
+
+            <Label for="FullName" style="padding-left:25%;">FullName:</Label>
+            <input style="width:35%;"   type="text"id="FullName" name="FullName"
+            required><br><br>
+
+                 <Label for="Email" style="padding-left:28%;">Email:</Label>
+                 <input style="width:35%;"   type="email"id="Email" name="Email"
+                  required><br><br>
+
+             <Label for="Phone number" style="padding-left:25%;">Phone number:</Label>
+            <input style="width:28%;"   type="tel"id="Phone " name="Phone "
+            required><br><br>
+
+             <Label for="Check-in Date" style="padding-left:25%;">Check-in Date:</Label>
+            <input style="width:20%;"   type="date"id="Checkin " name="Checkin Date"
+            required><br><br>
+
+             <Label for="Check-out Date" style="padding-left:25%;">Check-out Date:</Label>
+            <input style="width:20%;"   type="date"id="Checkout " name="Checkout Date"
+            required><br><br>
+            
+            <label for="RoomType" style="padding-left:30%;">RoomType:</label>
+            <select style="width:35%;" id="RoomType" name="RoomType" required>
+            
+            <option value="Single">Single Room </option>
+            <option value="Double">Double Room </option>
+            <option value="Dormitory">Dormitory </option>
+            <option value="fourseater">Four seater Room</option>
+        </select><br><br>
+
+           <Label for="Number of GUests" style="padding-left:25%;">Number of Guests:</Label>
+            <input style="width:20%;"   type="number"id="Guets " name="Guets" min="1" required><br><br>
+
+            <Label for="Special Requests" style="padding-left:40%;">Special Requests:</Label><br>
+            <textarea style="width:50%; margin-left:20%;" id="Requests" name="Requests" rows="6"
+            cols="20"></textarea><br><br>
+
+
+            <input style="margin-left:35%;"type="submit" value="BookNow">
+            <input style="margin-left:1%"type="reset" value="Reset Form">
+</form>
+</form>
+</body>
+</html>
