@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="viewport" content="width=device-width,initial scale-1.0">
+        <title>CSS selector</title>
+        <style>
+           /* #main p {
+                color:beige
+            }
+            #inside p{
+                background-color: aqua;
+            }
+            #main >p {
+                background-color: blue;
+            }
+           /* main +p{
+                background-color: blueviolet;
+            }*/
+
+           /* #main~p{
+                background-color: cadetblue;
+            }
+            a:link{
+                text-decoration:none ; font-size:40px
+            }
+            a:hover{
+                color:chartreuse; font: size 25px;
+
+            }
+            a:active{
+                color:blanchedalmond;
+            }*/
+            #main .odd{
+                color:brown
+            }
+            #main p:nth-child(even){
+                color:bisque}
+            /* style a specific element*/
+            #main p::first-letter{
+                color:royalblue;font-size:30px;
+            }
+            #main p::first-line{
+                background-color: yellowgreen;
+            }
+            #main p::before{
+                content:"read more";
+                color:maroon;
+                font-size:35px
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <!--css selectors-->
+        <div id="main">
+            <p class="odd"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est aperiam adipisci culpa possimus praesentium itaque
+                 labore consequuntur
+                 blanditiis aspernatur harum, veritatis deleniti illo nobis, dolorem vero rerum quia neque tempora?</p>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quae suscipit quos consequatur. Similique
+                suscipit nisi alias, quis sed molestiae consequuntur ea, cupiditate, minima assumenda sequi ut nulla? Ducimus, nemo.</p>
+          <p class="odd">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum amet voluptatibus illo velit! Quia dicta beatae debitis
+              odio asperiores. Obcaecati quidem in deserunt quasi animi repellendus quibusdam, cupiditate eius similique.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident accusantium quasi, praesentium sit nam 
+                 corrupti nesciunt, accusamus vero nostrum recusandae saepe tempora quidem reiciendis pariatur voluptatum, in hic enim.</p>            
+        <div id="inside"><!--inside first-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti ea quam assumenda, velit ipsam distinctio officii
+            s aut laboriosam aperiam ipsum, sequi animi? Voluptas distinctio sint expedita ducimus quidem veniam!</p>
+        </div><!--inside first end-->
+        </div><!--div first end-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad veniam voluptatem voluptatibus? Iusto autem cum quibusdam
+             odit eius repudiandae sequi nam cumque ipsam, in totam consequuntur corrupti, error eaque quia.</p>
+             <a href=""">visit my page!</a>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, iusto? Saepe delectus officiis natus error inventore 
+                eveniet atque iste excepturi, quidem ipsam maxime ad aliquid! Illum sapiente molestiae eius neque?
+             </p>
+    </body>
+</html>
