@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+    <style>
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing:0px;
+        }
+        main{
+            width:1200px;
+            height:auto;
+            background-color: aquamarine;
+            margin:0 auto;
+            display:grid;
+            grid-template-rows: 150px 80px 500px 200px;
+            gap : 20px;
+        }
+       
+       .box{
+        background-color: brown;
+        height: 300px;
+       } .box:nth-child(odd){
+         background-color: beige;
+         height:30px;
+        }
+        .box:nth-child(even){
+            background-color: brown;
+            height:300px;
+        }
+        /*@media screen and (max-width:768) and (min-width:375px){
+            main{
+                display:grid;
+                grid-template-columns: repeat(1,1fr);
+                gap:20px;
+                background-color: blanchedalmond;
+            }
+        }*/
+        #left_right{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .box_left,
+        .box_right{
+            background-color: aqua;
+        }
+        p{
+            font-size:5vh;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>abes ENGINEERING COLLEGE</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consectetur laborum sint v
+        oluptatum consequatur omnis ducimus quo est fugiat eaque modi rerum, porro in vero mollitia! Optio iste consequuntur aut.</p>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">
+            <div class="box_left">left</div>
+            <div class="box_right">right</div></div>
+        <div class="box">4</div>
+    </main>
+</body>
+</html>
