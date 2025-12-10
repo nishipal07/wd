@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+  <style> 
+  *{ 
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+   font-family: Arial, sans-serif; 
+  } 
+ nav{ 
+   background: #1e1d1d; 
+   color: rgb(245, 248, 29); 
+   padding: 13px 22px; 
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+ } 
+ .logo{ 
+   font-size: 22px; 
+   font-weight: bold; 
+ } 
+ .menu{ 
+   display: flex; 
+   gap: 20px; 
+   list-style: none; 
+ } 
+ .menu li a{ 
+   color: rgb(230, 230, 230); 
+   text-decoration: none; 
+   font-size: 14px; 
+ } 
+ .actions{ 
+   display: flex; 
+   gap: 15px; 
+ } 
+ .actions a{ 
+   color: white; 
+   text-decoration: none; 
+   font-size: 14px; 
+ } 
+ .ThreeLine{ 
+  font-size: 22px; 
+  cursor: pointer; 
+ } 
+ #toggle{ 
+   display: none; 
+ } 
+ @media(max-width: 768px){ 
+ .menu{ 
+   position: absolute; 
+   top: 55px; 
+   left: 0; 
+   width: 100%; 
+   background: #393939; 
+   flex-direction: column; 
+   align-items: center; 
+   display: none; 
+   border-radius: 2%; 
+ } 
+ .menu li{ 
+   padding: 12px 0; 
+ } 
+ .ThreeLine{ 
+   display: block; 
+ } 
+ #toggle:checked ~ .menu{ 
+   display: flex; 
+ } 
+ .actions{ 
+   display: none; 
+ } 
+ } 
+ </style> 
+ </head> 
+ <body> 
+ <nav> 
+    <div class="logo">AFFORDABLE THINGS</div> 
+    <input type="checkbox" id="toggle"> 
+    <label for="toggle" class="ThreeLine">☰</label> 
+ <ul class="menu"> 
+    <li><a href="#">Home</a></li> 
+    <li><a href="#">Products</a></li> 
+    <li><a href="#">Categories</a></li> 
+    <li><a href="#">Deals</a></li> 
+    <li><a href="#">Contact</a></li> 
+ </ul> 
+ <div class="actions"> 
+    <a href="#">Cart</a> 
+    <a href="#">Login</a> 
+ </div> 
+ </nav> 
+    <p>Hi , this is my site and here i sell items on affordable prices.</p>
+ </body>
+ </html> 

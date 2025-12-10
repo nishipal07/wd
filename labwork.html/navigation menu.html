@@ -1,0 +1,84 @@
+ <!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Navigation Menu</title> 
+  <style> 
+   *{ 
+    margin: 0px; 
+    padding: 0px; 
+    } 
+    body{ 
+    background-color: beige; 
+    } 
+    span{ 
+    color: rgb(226, 43, 43); 
+    } 
+    header{ 
+    font-size: 30px; 
+    text-align: center; 
+    background-color: rgb(21, 167, 167);width: 100vw; 
+    height: 35px; 
+    box-shadow: 5px 10px 32px rgb(96, 96, 152); 
+    } 
+    /* Inline-block Navigation */ 
+    .first ul { 
+    list-style: none;padding: 0; 
+    } 
+    .first li { 
+    display: inline-block; 
+    margin-right: 10px;margin-top: 50px; 
+    margin-left: 20px;margin-bottom: 15px; 
+    } 
+    .first a{ 
+    background-color: rgb(184, 246, 178);padding: 6px; 
+    border: solid;font-size: 18px;border-radius: 10px; 
+    } 
+    .sec ul{ 
+    list-style: none; 
+    padding: 0px; 
+    } 
+    .sec li{ 
+   display: inline-block; 
+   margin-right: 10px; 
+   margin-top: 10px; 
+   margin-left: 20px; 
+   } 
+   .sec a{ 
+   background-color: rgb(249, 179, 238); 
+   padding: 6px; 
+   border: solid; 
+   font-size: 18px; 
+   border-radius: 10px; 
+   } 
+   .first a { 
+   text-decoration: none; 
+   } 
+   .sec a { 
+   text-decoration: none; 
+   } 
+</style> 
+</head> 
+<body> 
+<header> 
+   ABES<span>Website</span> Navigation 
+   </header> 
+<nav class="first"> 
+<ul> 
+   <li><a href="">Home</a></li> 
+   <li><a href="">About</a></li> 
+   <li><a href="">Services</a></li> 
+   <li><a href="">Contact</a></li> 
+</ul> 
+</nav> 
+<nav class="sec"> 
+<ul> 
+    <li><a href="">Dashbord</a></li> 
+    <li><a href="">Profile</a></li> 
+    <li><a href="">Message</a></li> 
+    <li><a href="">Logout</a></li> 
+</ul> 
+</nav> 
+</body> 
+</html> 
