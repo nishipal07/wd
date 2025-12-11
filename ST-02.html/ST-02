@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial scale-0.1">
+    <title>Responsive e-commerce product card</title>
+<style>
+html,*{
+margin:0px;
+padding:0px;
+box-sizing:0;
+}
+body{
+background-color:green;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+background-color: #000;
+color: #FFF;
+text-align: center;
+margin-bottom: 20px;
+}
+h3{
+text-align: center;
+ color: #000;
+}
+p{
+text-align:left;
+ color:brown;
+}
+product{
+width:300px;
+height: auto;
+background: #F5f5f5;
+box-shadow: 1px 1px 10px blueviolet;
+border-radius: 5px;
+margin: 0 auto;
+padding: 5px;}
+#img{
+width: 282px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid #767575;
+padding: 0;
+ }
+button{
+width: 100%;
+padding: 5px;
+background-color: palevioletred;
+ }
+
+</style>
+
+</head>
+<body>
+<h1>flipcart</h1>
+<div id="product">
+<div id="img">
+<img src="bouquet.jpg" alt="bouquet" width="280px">
+</div>
+      
+<h3>Flowers Bouquet</h3>
+<p>Beautiful flowers with nice fragrance</p>
+<span style="color: red;"><b>&#8377;1099/-</b></span>
+<br><button>Add to Cart</button>
+<br><button>Buy Now</button>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
